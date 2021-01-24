@@ -6,34 +6,34 @@ namespace Dictionary
 {
     class MyDictionary<TKey, TValue>
     {
-        TKey[] item;
-        TValue[] items;
+        TKey[] Keys;
+        TValue[] Values;
 
         public MyDictionary()
         {
-            item = new TKey[0];
-            items = new TValue[0];
+            Keys = new TKey[0];
+            Values = new TValue[0];
         }
 
         public void Add(TKey key, TValue value)
         {
-            TKey[] keys = item;
-            TValue[] values = items;
-            item = new TKey[item.Length + 1];
-            items = new TValue[items.Length + 1];
+            TKey[] keys = Keys;
+            TValue[] values = Values;
+            Keys = new TKey[Keys.Length + 1];
+            Values = new TValue[Values.Length + 1];
 
             for (int i = 0; i < keys.Length; i++)
             {
-                item[i] = keys[i];
+                Keys[i] = keys[i];
 
             }
             for (int i = 0; i < values.Length; i++)
             {
-                items[i] = values[i];
+                Values[i] = values[i];
             }
 
-            item[item.Length - 1] = key;
-            items[items.Length - 1] = value;
+            Keys[Keys.Length - 1] = key;
+            Values[Keys.Length - 1] = value;
 
 
         }
@@ -41,9 +41,9 @@ namespace Dictionary
         public void Display()
         {
 
-            for(int i = 0; i < item.Length; i++)
+            for(int i = 0; i < Keys.Length; i++)
             {
-                Console.WriteLine($" {item[i]} {items[i]}");
+                Console.WriteLine($" {Keys[i]} {Values[i]}");
             }
         }
 
