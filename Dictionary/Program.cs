@@ -34,19 +34,7 @@ namespace Dictionary
                 
             //}
 
-            //string yeniKullanici = "Filiz Şahap";
-            //bool varmi = kullanicilar.TryGetValue(0, out yeniKullanici);
-
-            //if (varmi)
-            //{
-            //    Console.WriteLine("Bu Id de bir kullanıcı mevcuttur.");
-            //}
-            //else
-            //{
-            //    kullanicilar.Add(0,yeniKullanici);
-            //    Console.WriteLine("Ekleme işlemi başarıyla gerçekleşti"+);
-                
-            //}
+           
         }
     }
 }

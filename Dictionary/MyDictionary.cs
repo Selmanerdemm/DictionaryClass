@@ -43,7 +43,7 @@ namespace Dictionary
 
             for(int i = 0; i < Keys.Length; i++)
             {
-                Console.WriteLine($" {Keys[i]} {Values[i]}");
+                Console.WriteLine($" {Keys[i]} : {Values[i]}");
             }
         }
 
